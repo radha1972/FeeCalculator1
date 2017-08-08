@@ -1,0 +1,47 @@
+package com.radha;
+import java.sql.DriverManager;
+
+
+import java.sql.Statement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+public class EmpJDBC {
+Connection con;
+Statement stmt;
+ResultSet res;
+	public static void main(String[] args)  throws SQLException,ClassNotFoundException{
+	EmpJDBC emp= new EmpJDBC();
+	emp.openConnection();
+	emp.execute();
+
+	}
+  public void openConnection() throws SQLException,ClassNotFoundException
+  {   Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+	  String url = "jdbc:sqlserver://localhost/VIVEK:1433;databasename=sample";
+  String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+  String userName = ""; 
+  String password = "saibaba2003";
+	   con= DriverManager.getConnection(url,userName,password);
+	  
+	  
+  }
+  public void execute() throws SQLException
+  {
+	  stmt = con.createStatement();
+	  res = stmt.executeQuery("select * from Emp");
+	  int no=0;
+	  String str="";
+	  while (res!=null)
+	  {
+		  no=res.getInt(1);
+		  str=res.getString(2);
+		  System.out.println("the output is ");
+		  System.out.println("Radha"+no);
+		  System.out.println("Radha"+str);
+		  
+		  
+	  }
+	  
+  }
+}

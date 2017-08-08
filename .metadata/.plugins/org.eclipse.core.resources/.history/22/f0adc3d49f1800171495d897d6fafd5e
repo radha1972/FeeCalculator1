@@ -1,0 +1,9 @@
+package com.radha;
+
+public class UserResource {
+
+	public UserResource() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

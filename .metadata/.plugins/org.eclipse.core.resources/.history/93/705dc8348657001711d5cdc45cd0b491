@@ -1,0 +1,9 @@
+package com.radha.client;
+
+public class HelloClient {
+
+	public HelloClient() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.radha.endpoint.HelloWorldPublisher.java&apos; to &apos;HelloWorldPublisher1.java&apos;&#x0D;&#x0A;- Original project: &apos;RadhaSoapXML&apos;&#x0D;&#x0A;- Original element: &apos;com.radha.endpoint.HelloWorldPublisher.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.radha.endpoint.HelloWorldPublisher1.java&apos;" description="Rename compilation unit &apos;HelloWorldPublisher.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.radha.endpoint{HelloWorldPublisher.java" name="HelloWorldPublisher1.java" references="false" stamp="1498146129355" version="1.0"/>
+</session>

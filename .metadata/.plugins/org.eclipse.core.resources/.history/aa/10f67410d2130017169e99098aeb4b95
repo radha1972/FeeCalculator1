@@ -1,0 +1,54 @@
+package com.radha;
+
+public class TestwebserviceProxy implements com.radha.Testwebservice {
+  private String _endpoint = null;
+  private com.radha.Testwebservice testwebservice = null;
+  
+  public TestwebserviceProxy() {
+    _initTestwebserviceProxy();
+  }
+  
+  public TestwebserviceProxy(String endpoint) {
+    _endpoint = endpoint;
+    _initTestwebserviceProxy();
+  }
+  
+  private void _initTestwebserviceProxy() {
+    try {
+      testwebservice = (new com.radha.TestwebserviceServiceLocator()).getTestwebservice();
+      if (testwebservice != null) {
+        if (_endpoint != null)
+          ((javax.xml.rpc.Stub)testwebservice)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+        else
+          _endpoint = (String)((javax.xml.rpc.Stub)testwebservice)._getProperty("javax.xml.rpc.service.endpoint.address");
+      }
+      
+    }
+    catch (javax.xml.rpc.ServiceException serviceException) {}
+  }
+  
+  public String getEndpoint() {
+    return _endpoint;
+  }
+  
+  public void setEndpoint(String endpoint) {
+    _endpoint = endpoint;
+    if (testwebservice != null)
+      ((javax.xml.rpc.Stub)testwebservice)._setProperty("javax.xml.rpc.service.endpoint.address", _endpoint);
+    
+  }
+  
+  public com.radha.Testwebservice getTestwebservice() {
+    if (testwebservice == null)
+      _initTestwebserviceProxy();
+    return testwebservice;
+  }
+  
+  public void SayHello(java.lang.String message){
+    if (testwebservice == null)
+      _initTestwebserviceProxy();
+    testwebservice.sayHello(message);
+  }
+  
+  
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringBatchJob/src/test/resources/hsqldb&apos; to &apos;mysqldb&apos;" description="Rename resource &apos;hsqldb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/resources/hsqldb" name="mysqldb" stamp="1471727039154" updateReferences="true"/>
+</session>

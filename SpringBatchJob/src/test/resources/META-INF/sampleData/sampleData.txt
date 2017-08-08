@@ -1,0 +1,5 @@
+FirstName	LastName	School	RollNumber
+Celina Marcus LittleFlower 11900
+Rose Anthony St.MarysConvent 22990
+Arthur samuel St.Anthonys 18970
+Carl Jacob LittleFlower 12349

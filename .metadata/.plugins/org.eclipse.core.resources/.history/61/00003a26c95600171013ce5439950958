@@ -1,0 +1,9 @@
+package com.radha.jaxws;
+
+public class GetHelloWorldAsString {
+
+	public GetHelloWorldAsString() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

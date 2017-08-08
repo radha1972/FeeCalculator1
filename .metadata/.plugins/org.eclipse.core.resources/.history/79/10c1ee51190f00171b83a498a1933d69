@@ -1,0 +1,12 @@
+package com.radha;
+
+import java.util.logging.Logger;
+
+public class Test {
+
+
+    static Logger logger = Logger.getLogger(Test.class.getName());
+    public static void main(String[] args) {
+    logger.info(System.getProperty("java.library.path"));
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;user.jsp&apos; to &apos;strutsex&apos;" description="Move &apos;user.jsp&apos; to &apos;strutsex&apos;" destination="/strutsex" element1="/strutsdisplay/WebContent/user.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1484068472315" updateReferences="true"/>
+</session>

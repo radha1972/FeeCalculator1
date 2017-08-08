@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Sample</groupId>
+  <artifactId>Sample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.mysql.jdbc.Driver</groupId>
+  		<artifactId>com.mysql.jdbc_</artifactId>
+  		<version>5.15</version>
+  		<scope>system</scope>
+  		<type>jar</type>
+  		<systemPath>C:\Users\radha\Downloads\com.mysql.jdbc_5.15.jar</systemPath>
+  		<classifier>_</classifier>
+  	</dependency>
+  </dependencies>
+</project>

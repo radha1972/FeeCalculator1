@@ -1,0 +1,9 @@
+package com.radha;
+
+public class Testjdbc {
+
+	public Testjdbc() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

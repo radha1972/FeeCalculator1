@@ -1,0 +1,23 @@
+package com.radha.client;
+
+import java.net.URL;
+import javax.xml.namespace.QName;
+import javax.xml.ws.Service;
+import com.radha.ws.Hello;
+
+public class HelloClient{
+
+	public static void main(String[] args) throws Exception {
+
+	URL url = new URL("http://localhost:9800/ws/hello?wsdl");
+        QName qname = new QName("http://ws.radha.com/", "HelloImplService");
+
+        Service service = Service.create(url, qname);
+
+        Hello hello = service.getPort(Hello.class);
+
+         System.out.println(hello.getHelloWorldAsString("radha"));
+
+    }
+
+}

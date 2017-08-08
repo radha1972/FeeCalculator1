@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;maven-archiver&apos; to &apos;UserManagement&apos;" description="Move &apos;maven-archiver&apos; to &apos;UserManagement&apos;" destination="/UserManagement" element1="target/maven-archiver" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1470525915289" updateReferences="true"/>
+</session>

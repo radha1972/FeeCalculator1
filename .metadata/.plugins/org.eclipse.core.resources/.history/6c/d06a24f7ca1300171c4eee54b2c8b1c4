@@ -1,0 +1,11 @@
+package com.radha;
+
+public class Testwebservice {
+	public void  SayHello(String message)
+	{
+		
+		System.out.println(message);
+		
+	}
+
+}

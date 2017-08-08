@@ -1,0 +1,5 @@
+package net.radha.spring.Controller;
+
+public class HelloController {
+
+}

@@ -1,0 +1,9 @@
+package com.radha.endpoint;
+
+public class HelloWorldPublisher {
+
+	public HelloWorldPublisher() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,5 @@
+package net.radha.spring.dao;
+
+public class CustomerDao {
+
+}

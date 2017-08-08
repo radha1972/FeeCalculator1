@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts-config>
+<form-beans>
+<form-bean name="registrationBean"
+type="coreservlets.RegistrationFormBean"/>
+</form-beans>
+<action-mappings>
+<action path="/actions/register"
+type="coreservlets.RegistrationAction"
+name="registrationBean"
+scope="request">
+<forward name="success"
+path="/WEB-INF/results/confirm-registration.jsp"/>
+</action>
+</action-mappings>
+<message-resources parameter="MessageResources"
+null="false"/>
+</struts-config>

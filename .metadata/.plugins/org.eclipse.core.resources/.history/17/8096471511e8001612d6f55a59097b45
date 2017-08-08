@@ -1,0 +1,5 @@
+package radgradle;
+
+public class MockitoTest {
+
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+    xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+
+    xsi:schemaLocation="
+
+    http://www.springframework.org/schema/beans
+
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+    http://www.springframework.org/schema/jdbc
+
+    http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+     
+
+    <bean id="jobRepository"
+
+    class="org.springframework.batch.core.repository.support.JobRepositoryFactoryBean">
+
+        <property name="dataSource" ref="dataSource" />
+
+        <property name="transactionManager" ref="transactionManager" />
+
+        <property name="databaseType" value="mysql" />
+
+    </bean>
+
+     
+
+    <bean id="jobLauncher"
+
+    class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+
+        <property name="jobRepository" ref="jobRepository" />
+    </bean>
+
+     
+
+    <bean id="transactionManager"
+
+    class="org.springframework.batch.support.transaction.ResourcelessTransactionManager" />
+
+     
+
+     
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+
+        lazy-init="true" destroy-method="close">
+
+         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+<property name="url"
+
+            value="jdbc:mysql://localhost:3306/sample" />       
+        
+        <property name="username" value="root" />
+
+        <property name="password" value="saibaba2003" />
+
+ 
+
+ 
+
+    </bean>
+
+  
+
+  <!-- create job-meta tables automatically
+37
+ Note: when using db2 or hsql just substitute "mysql" with "db2" or "hsql".
+38
+       For example, .../core/schema-drop-db2.sql -->
+
+   <jdbc:initialize-database data-source="dataSource">
+
+       <jdbc:script location=" file:src/test/resources/schema-drop-mysql.sql"/>
+
+       <jdbc:script location="file:src/test/resources/schema-mysql.sql" />       
+
+    </jdbc:initialize-database>
+
+     
+
+</beans> 

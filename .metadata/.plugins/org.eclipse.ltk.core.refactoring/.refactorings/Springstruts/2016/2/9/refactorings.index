@@ -1,0 +1,9 @@
+1456320744499	Move 'applicationContext.xml' to 'WEB-INF'
+1456320760657	Move 'struts.xml' to 'WEB-INF'
+1456433894517	Move 'Success.jsp' to 'WEB-INF'
+1456433937970	Move 'Success.jsp' to 'WebContent'
+1456437353588	Move 'Success.jsp' to 'WEB-INF'
+1456495252626	Move 'Success.jsp' to 'WebContent'
+1456501434274	Delete element
+1456501538654	Move 'struts.xml' to 'resources'
+1456501951961	Move 'struts.xml' to 'classes'

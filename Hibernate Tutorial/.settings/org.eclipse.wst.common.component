@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Hibernate Tutorial">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="dom4j.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/dom4j.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logback-core-0.9.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/logback-core-0.9.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j.api-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/slf4j.api-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-commercial-5.1.37-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/mysql-connector-java-commercial-5.1.37/mysql-connector-java-commercial-5.1.37-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.commons.logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/org.apache.commons.logging-1.1.1.jar/org.apache.commons.logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.apache.commons.collections.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/org.apache.commons.collections.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.persistence_1.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/javax.persistence_1.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.springsource.org.hibernate-3.2.6.ga.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/com.springsource.org.hibernate-3.2.6.ga.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/hibernate3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-core-4.2.4.final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/hibernate-core-4.2.4.final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-core.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/hibernate-core.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.springsource.net.sf.cglib-2.2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/com.springsource.net.sf.cglib-2.2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.transaction.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/javax.transaction.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.servlet.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/radha/Downloads/javax.servlet.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Hibernate_Tutorial"/>
+        <property name="java-output-path" value="/Hibernate Tutorial/build/classes"/>
+    </wb-module>
+</project-modules>

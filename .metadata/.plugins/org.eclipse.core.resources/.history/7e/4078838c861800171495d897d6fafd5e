@@ -1,0 +1,9 @@
+package model;
+
+public class UsersResource {
+
+	public UsersResource() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

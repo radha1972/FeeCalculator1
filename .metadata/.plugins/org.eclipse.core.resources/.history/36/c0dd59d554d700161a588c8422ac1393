@@ -1,0 +1,5 @@
+package net.radha.struts.displaytag;
+
+public class UserForm {
+
+}

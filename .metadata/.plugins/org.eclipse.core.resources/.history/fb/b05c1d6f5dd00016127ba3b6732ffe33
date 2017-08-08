@@ -1,0 +1,5 @@
+package net.radha.spring.config;
+
+public class AppInitializer1 {
+
+}
